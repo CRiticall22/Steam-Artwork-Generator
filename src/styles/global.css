@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #0a0e14;
+  color: #f2f4f8;
+  font-family: 'SF Pro Text', -apple-system, 'Segoe UI', sans-serif;
+}
+
+/* Shared keyframes for the DOM live preview. Colors/durations are set via
+ * inline styles per layer instance; these only define the motion curve. */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
